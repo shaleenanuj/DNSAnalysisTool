@@ -1,0 +1,117 @@
+url = "download_folder?userCloudID="+ userCloudID +"&cloudName=" + cloud + "&folderPath=" + folderPath; window.location.href = ur
+
+git/LocalDNSAnalysisTool/DNSAnalysisTool/WebContent
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+
+
+
+<style type="text/css">
+    body {
+	background-repeat: repeat;
+	font-weight: bolder;
+	font-size: large;
+	text-align: left;
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	margin-left: 5px;
+	background-color: #E7E7E7;
+}
+    </style>
+</head>
+<body>
+<script>
+
+$(function(){
+	  
+	  $(".dropdown-menu li a").click(function(){
+	    
+	    $(".btn:first-child").text($(this).text());
+	    $(".btn:first-child").val($(this).text());
+	   var para = $('.btn:first-child').val();
+	   alert(para);
+	  });
+
+	});
+	
+</script>
+
+  <div class="btn-group">
+    <button class="btn">Parameters</button>
+    <button class="btn dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+   </button>
+   
+   
+ <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+   <li><a href="?parameter='para'">Domain wise analytics</a></li>
+   
+
+   
+   <li><a href="#">Resolution Time</a></li>
+    <li><a href="#">Domain-Host Interaction</a></li>
+  
+ </ul>
+</div> 
+
+<button type="submit" class="btn btn-default " style="font-size: large">Perform</button>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+  
+  <input type="date" name="StartDate">Start Date
+  <input type="date" name="EndDate">End Date
+  
+  
+  
+  
+  <ul class="nav nav-pills nav-justified">
+      <li class="active"><a href="Welcome.jsp">Welcome</a></li>
+      <li><a href="AboutUs.jsp">About us</a></li>
+      <li><a href="Register.jsp" onclick="return false;">Register</a></li>
+      <li><a href="Login.jsp" onclick="return false;">Login</a></li>
+      <li><a href="MostVisted.jsp">Most Visited</a></li>
+      <li><a href="ContactUs.jsp">Contact</a></li>
+    </ul>
+  
+  
+    <filter>
+    <filter-name>AccessDeny</filter-name>
+    <filter-class>
+        container.AccessDeny
+    </filter-class>
+    <init-param>
+        <param-name>avoid-urls</param-name>
+        <param-value>Welcome.jsp</param-value>
+    </init-param>
+    <init-param>
+        <param-name>avoid-urls</param-name>
+        <param-value>Login.jsp</param-value>
+    </init-param>
+</filter>
+<filter-mapping>
+    <filter-name>SessionFilter</filter-name>
+    <url-pattern>/ValidateUser</url-pattern>
+</filter-mapping>
+<filter-mapping>
+    <filter-name>SessionFilter</filter-name>
+    <url-pattern>/Welcome_login.jsp</url-pattern>
+</filter-mapping>
+ 

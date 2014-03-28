@@ -16,12 +16,12 @@
 ================================================== -->
   <body>
     <ul class="nav nav-pills nav-justified">
-      <li><a href="#">Welcome</a></li>
+      <li><a href="Welcome.jsp">Welcome</a></li>
       <li class="active"><a href="#">About us</a></li>
-      <li><a href="#">Register</a></li>
-      <li><a href="#">Login</a></li>
-      <li><a href="#">Most Visited</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="Register.jsp">Register</a></li>
+      <li><a href="Login.jsp">Login</a></li>
+      <li><a href="MostVisted.jsp">Most Visited</a></li>
+      <li><a href="ContactUs.jsp">Contact</a></li>
     </ul>
     <p><h1><center>Analytical Tool of DNS Server</center></h1></p>
       <footer>

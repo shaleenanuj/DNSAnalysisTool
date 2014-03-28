@@ -68,7 +68,7 @@ Hello, <%= session.getAttribute( "user_id" ) %>
   <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
    Fields <span class="caret"></span>
   </button>
-  <ul class="dropdown-menu">
+  <ul class="dropdown-menu" name= >
     <li><a href="#">Qps</a></li>
     <li><a href="#">Hits</a></li>
     <li><a href="#">Domain</a></li>
@@ -79,7 +79,7 @@ Hello, <%= session.getAttribute( "user_id" ) %>
  
 
 <button type="submit" class="btn btn-default " style="font-size: large">Perform</button>
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="jquery-1.10.2.min.js"></script>
 <script src="bootstrap-3.0.3/dist/js/bootstrap.min.js"></script>
 <script src="bootstrap-3.0.3/docs-assets/js/holder.js"></script>
 </body>

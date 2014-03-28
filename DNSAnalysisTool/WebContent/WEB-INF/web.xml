@@ -19,4 +19,44 @@
     <servlet-name>ValidateUser</servlet-name>
     <url-pattern>/ValidateUser</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Tryit</display-name>
+    <servlet-name>Tryit</servlet-name>
+    <servlet-class>container.Tryit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Tryit</servlet-name>
+    <url-pattern>/Tryit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PerformAnalytics</display-name>
+    <servlet-name>PerformAnalytics</servlet-name>
+    <servlet-class>container.PerformAnalytics</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PerformAnalytics</servlet-name>
+    <url-pattern>/PerformAnalytics</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Logout</display-name>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>container.Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FileAvail</display-name>
+    <servlet-name>FileAvail</servlet-name>
+    <servlet-class>container.FileAvail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FileAvail</servlet-name>
+    <url-pattern>/files/*</url-pattern>
+  </servlet-mapping>
 </web-app>
