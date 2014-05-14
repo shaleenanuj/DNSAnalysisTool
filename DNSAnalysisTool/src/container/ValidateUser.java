@@ -70,7 +70,8 @@ boolean isUserCorrect(String user_id, String pwd,HttpServletRequest request){
 			        	 s= request.getSession();
 			 			 s.setAttribute("name", user_name);
 			 			 s.setAttribute("user_id",user_id );
-			 			
+			 			//s.setMaxInactiveInterval(60*3);
+			 		
 			 				PreparedStatement prestmt1 = (PreparedStatement) conn.prepareStatement(str);
 			 				prestmt1.setInt(1, 1);
 			 				prestmt1.setInt(2,Integer.parseInt(user_id));
@@ -93,7 +94,9 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 	try{
 	String user_id= request.getParameter("user_id");
 	String pwd= request.getParameter("pwd");
-	if(user_id == null || pwd==null)
+	String admin= request.getParameter("admin");
+	out.print(user_id+pwd+admin);
+	/*if(user_id == null || pwd==null)
 		throw new NullPointerException();
 	response.setContentType("text/html");
 	out = response.getWriter();
@@ -111,21 +114,21 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			}
 			else
 				{	
-				/*if(alreadylogin==1)
+				if(alreadylogin==1)
 				{
 					response.sendRedirect("AlreadyLogin.jsp");
-				}*/
+				}
 					out.println("bad");
 					response.sendRedirect("ReLogin.jsp");
 	
 				
-				}		
+				}*/		
 		}catch(NullPointerException e){
 			response.sendRedirect("ReLogin.jsp");
-	}catch (InterruptedException e) {
+	}/*catch (InterruptedException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
-	}
+	}*/
 	
 	
 }

@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Calendar;
 import java.util.Date;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -128,8 +127,8 @@ public class PerformAnalytics extends HttpServlet {
 			try {
 				hadoopjobs.CallAnalytics hac = new hadoopjobs.CallAnalytics();
 
-				String a = hac.callFunction(para_list);
-				System.out.println(a);
+				String a= hac.callFunction(para_list);
+				//System.out.println(a);
 				s.setAttribute("file_path", a);
 				s.setAttribute("tsv_path", "\"" + a + "\"");
 
@@ -146,10 +145,10 @@ public class PerformAnalytics extends HttpServlet {
 				 else if (para_list[0].equals("Domain-HostInteraction")) {
 					 if (para_list[2].equals("Dip")) {
 				 			
-				 			response.sendRedirect("bar_graphdomain.jsp");
+				 			response.sendRedirect("bar_graphip.jsp");
 				 	}	
 					 if (para_list[2].equals("Ipd")) {
-					 			response.sendRedirect("bar_graphip.jsp");
+					 			response.sendRedirect("bar_graphdomain.jsp");
 					 	}  
 					 	
 				} 

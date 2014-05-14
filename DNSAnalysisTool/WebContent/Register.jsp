@@ -65,12 +65,12 @@
     
     <div class="container">
 
-      <form class="form-signin" role="form">
+      <form class="form-signin" role="form" method="post" action="SaveUser">
         <h2 class="form-signin-heading">Sign up</h2>
-        <input type="text" class="form-control" placeholder="User-id" required autofocus> <br>
-        <input type="text" class="form-control" placeholder="User name" required > <br>
-        <input type="password" class="form-control" placeholder="Password" required> <br>
-         <input type="text" class="form-control" placeholder="Email id" required> <br>
+        <input type="text" class="form-control" placeholder="User-id" name="user_id" required autofocus> <br>
+        <input type="text" class="form-control" placeholder="User name" name="user_name" required > <br>
+        <input type="password" class="form-control" placeholder="Password" name="pswd" required> <br>
+         <input type="email" class="form-control" placeholder="Email id" name="email" required> <br>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
       </form>
 

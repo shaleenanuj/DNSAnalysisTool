@@ -59,4 +59,18 @@
     <servlet-name>FileAvail</servlet-name>
     <url-pattern>/files/*</url-pattern>
   </servlet-mapping>
+  <listener>
+    <description>sessionListener</description>
+    <listener-class>container.LogoutListner</listener-class>
+  </listener>
+  <servlet>
+    <description></description>
+    <display-name>SaveUser</display-name>
+    <servlet-name>SaveUser</servlet-name>
+    <servlet-class>container.SaveUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveUser</servlet-name>
+    <url-pattern>/SaveUser</url-pattern>
+  </servlet-mapping>
 </web-app>

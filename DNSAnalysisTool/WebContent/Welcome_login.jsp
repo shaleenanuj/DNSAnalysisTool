@@ -28,10 +28,10 @@
 	  %>
     <ul class="nav nav-pills nav-justified">
       <li><a href="#" class="active">Welcome</a></li>
-      <li><a href="#">About us</a></li>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Most Visited</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="AboutUs_login.jsp">About us</a></li>
+      <li><a href="UserHome.jsp">Home</a></li>
+      <li><a href="MostVisted.jsp">Most Visited</a></li>
+      <li><a href="ContactUs_login.jsp">Contact</a></li>
     </ul>
     
 
